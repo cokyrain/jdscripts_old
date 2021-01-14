@@ -1,5 +1,5 @@
 {
-  "name": "lxk0301",
+  "name": "cokyrain",
   "version": "1.0.0",
   "description": "{**When you're done, you can delete the content in this README and update the file with details for others getting started with your repository**}",
   "main": "AlipayManor.js",
@@ -13,7 +13,7 @@
   "keywords": [
     "京东薅羊毛工具, 京东水果、宠物、种豆等等"
   ],
-  "author": "lxk0301",
+  "author": "cokyrain",
   "license": "ISC",
   "dependencies": {
     "crypto-js": "^4.0.0",
