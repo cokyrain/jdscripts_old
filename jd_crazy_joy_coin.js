@@ -637,7 +637,7 @@ function getGrowState() {
     })
   })
 }
-function taskUrl(functionId, body = '') {
+function taskUrl(functionId, body = '', taskCookie = cookie) {
   let t = Date.now().toString().substr(0, 10)
   let e = body || ""
   e = $.md5("aDvScBv$gGQvrXfva8dG!ZC@DA70Y%lX" + e + t)
@@ -645,7 +645,7 @@ function taskUrl(functionId, body = '') {
   return {
     url: `${JD_API_HOST}?uts=${e}&appid=crazy_joy&functionId=${functionId}&body=${escape(body)}&t=${t}`,
     headers: {
-      'Cookie': cookie,
+      'Cookie': taskCookie,
       'Host': 'api.m.jd.com',
       'Accept': '*/*',
       'Connection': 'keep-alive',
